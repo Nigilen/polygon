@@ -1,0 +1,22 @@
+@font-face {
+  font-weight: 100;
+  font-family: 'IBMPlexSansCond';
+  font-style: normal;
+  src: url("./assets/fonts/IBMPlexSansCond-Thin.woff2") format("woff2");
+}
+
+html,
+body,
+input,
+button {
+  font-family: 'IBMPlexSansCond', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+

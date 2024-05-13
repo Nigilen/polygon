@@ -1,0 +1,19 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 200px;
+  height: 90px;
+  aspect-ratio: 1 / 1;
+  color: aliceblue;
+  font-size: 32px;
+  background-color: #828282;
+  border: none;
+  border-radius: 20px;
+  box-shadow:
+    12px 8px 16px 0 rgba(0 0 0 / 25%),
+    inset -12px -8px 16px 0 rgba(0 0 0 / 25%),
+    24px 24px 48px 0 rgba(0 0 0 / 25%);
+  cursor: pointer;
+}
