@@ -12,8 +12,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, '..', './dist'),
     filename: production
-            ? 'static/scripts/[name].[contenthash].js'
-            : 'static/scripts/[name].js',
+            ? '[name].[contenthash].js'
+            : '[name].js',
         publicPath: '/',
   },
   module: {
@@ -55,21 +55,21 @@ module.exports = {
         test: /\.(png|jpg|gif|webp)$/,
         type: 'asset/resource',
         generator: {
-          filename: 'static/images/[hash][ext][query]',
+          filename: '[hash][ext][query]',
         },
       },
       {
         test: /\.mp3$/,
         type: 'asset/resource',
         generator: {
-          filename: 'static/audio/[hash][ext][query]'
+          filename: '[hash][ext][query]'
         }
       },
       {
         test: /\.(woff(2)?|eot|ttf|otf)$/,
         type: 'asset/resource',
         generator: {
-          filename: 'static/fonts/[hash][ext][query]',
+          filename: '[hash][ext][query]',
         },
       },
       {
@@ -92,7 +92,7 @@ module.exports = {
       minify: false
     }),
     new MiniCssExtractPlugin({
-      filename: 'static/styles/[name].[contenthash].css'
+      filename: '[name].[contenthash].css'
     }),
     new ReactRefreshWebpackPlugin(),
     new webpack.EnvironmentPlugin({
